@@ -18,8 +18,8 @@ nbclient.exceptions.CellExecutionError: An error occurred while executing the fo
 import pandas as pd
 import plotly.graph_objs as go
 import plotly.express as px
-import seaborn as sns
 import matplotlib.pyplot as plt
+import seaborn as sns
 import textwrap
 ------------------
 
@@ -29,22 +29,9 @@ import textwrap
 Cell [1;32mIn[1], line 4[0m
 [0;32m      2[0m [38;5;28;01mimport[39;00m [38;5;21;01mplotly[39;00m[38;5;21;01m.[39;00m[38;5;21;01mgraph_objs[39;00m [38;5;28;01mas[39;00m [38;5;21;01mgo[39;00m
 [0;32m      3[0m [38;5;28;01mimport[39;00m [38;5;21;01mplotly[39;00m[38;5;21;01m.[39;00m[38;5;21;01mexpress[39;00m [38;5;28;01mas[39;00m [38;5;21;01mpx[39;00m
-[1;32m----> 4[0m [38;5;28;01mimport[39;00m [38;5;21;01mseaborn[39;00m [38;5;28;01mas[39;00m [38;5;21;01msns[39;00m
-[0;32m      5[0m [38;5;28;01mimport[39;00m [38;5;21;01mmatplotlib[39;00m[38;5;21;01m.[39;00m[38;5;21;01mpyplot[39;00m [38;5;28;01mas[39;00m [38;5;21;01mplt[39;00m
+[1;32m----> 4[0m [38;5;28;01mimport[39;00m [38;5;21;01mmatplotlib[39;00m[38;5;21;01m.[39;00m[38;5;21;01mpyplot[39;00m [38;5;28;01mas[39;00m [38;5;21;01mplt[39;00m
+[0;32m      5[0m [38;5;28;01mimport[39;00m [38;5;21;01mseaborn[39;00m [38;5;28;01mas[39;00m [38;5;21;01msns[39;00m
 [0;32m      6[0m [38;5;28;01mimport[39;00m [38;5;21;01mtextwrap[39;00m
-
-File [1;32m~\anaconda3\lib\site-packages\seaborn\__init__.py:2[0m
-[0;32m      1[0m [38;5;66;03m# Import seaborn objects[39;00m
-[1;32m----> 2[0m [38;5;28;01mfrom[39;00m [38;5;21;01m.[39;00m[38;5;21;01mrcmod[39;00m [38;5;28;01mimport[39;00m [38;5;241m*[39m  [38;5;66;03m# noqa: F401,F403[39;00m
-[0;32m      3[0m [38;5;28;01mfrom[39;00m [38;5;21;01m.[39;00m[38;5;21;01mutils[39;00m [38;5;28;01mimport[39;00m [38;5;241m*[39m  [38;5;66;03m# noqa: F401,F403[39;00m
-[0;32m      4[0m [38;5;28;01mfrom[39;00m [38;5;21;01m.[39;00m[38;5;21;01mpalettes[39;00m [38;5;28;01mimport[39;00m [38;5;241m*[39m  [38;5;66;03m# noqa: F401,F403[39;00m
-
-File [1;32m~\anaconda3\lib\site-packages\seaborn\rcmod.py:3[0m
-[0;32m      1[0m [38;5;124;03m"""Control plot style and scaling using the matplotlib rcParams interface."""[39;00m
-[0;32m      2[0m [38;5;28;01mimport[39;00m [38;5;21;01mfunctools[39;00m
-[1;32m----> 3[0m [38;5;28;01mimport[39;00m [38;5;21;01mmatplotlib[39;00m [38;5;28;01mas[39;00m [38;5;21;01mmpl[39;00m
-[0;32m      4[0m [38;5;28;01mfrom[39;00m [38;5;21;01mcycler[39;00m [38;5;28;01mimport[39;00m cycler
-[0;32m      5[0m [38;5;28;01mfrom[39;00m [38;5;21;01m.[39;00m [38;5;28;01mimport[39;00m palettes
 
 [1;31mModuleNotFoundError[0m: No module named 'matplotlib'
 
