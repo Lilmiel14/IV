@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Example Notebook &#8212; Jupyter Book Template</title>
+    <title>Social Media Data Story Project &#8212; Jupyter Book Template</title>
   
   
   
@@ -149,7 +149,7 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Example Notebook</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Social Media Data Story Project</a></li>
 </ul>
 
     </div>
@@ -364,7 +364,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Example Notebook</h1>
+    <h1>Social Media Data Story Project</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -374,8 +374,14 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#load-data">Load data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#plot-data">Plot data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset-and-preprocessing">Dataset and preprocessing</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#average-screentime">1 Average screentime</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#effects-of-social-media">2 Effects of social media</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#factors-contributing-to-internet-addiction">3 Factors contributing to internet addiction.</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#arguments-per-perspective">Arguments per perspective</a></li>
 </ul>
             </nav>
         </div>
@@ -387,184 +393,93 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="example-notebook">
-<h1>Example Notebook<a class="headerlink" href="#example-notebook" title="Permalink to this headline">#</a></h1>
-<p>(Last updated: May 22, 2023)</p>
-<p>You can also create content with Jupyter Notebooks.
-This means that you can include code blocks and their outputs in your book.
-In this notebook, we show some examples of loading and plotting data.
-Check <a class="reference external" href="https://jupyterbook.org/en/stable/content/executable/index.html">this documentation</a> about how to write executable content.</p>
+  <div class="tex2jax_ignore mathjax_ignore section" id="social-media-data-story-project">
+<h1>Social Media Data Story Project<a class="headerlink" href="#social-media-data-story-project" title="Permalink to this headline">#</a></h1>
+<ul class="simple">
+<li><p>Student Names: Alvin Udijana, Milan Wassenberg, Serge Verhoef, Vin Wiegman</p></li>
+<li><p>Student Number: 13187589, 14739860, 13989111, 14661152</p></li>
+<li><p>Group : 41</p></li>
+<li><p>Work group : Q</p></li>
+</ul>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h2>
+<p>Social media is a platform where students spend plenty of time. Students often use social media applications such as Instagram, Snapchat, Facebook etc. Social media has a positive as well as a negative impact on students and through this data-driven story we will dive deeper into these impacts.</p>
+<p>We will make use of datasets to dive deep into the social media industry, exploring user statistics, and effects of social media. By analyzing these data, we aim to gain valuable insights into the evolving landscape of social media. Through visualizations of social media and screentime datasets, we identify user preferences and explore the factors driving the growth and innovation within the social media industry.</p>
+<p>In this story we have a few perspectives about social media. First of all, social media increases the awareness of students. Because of social media, students gain access to a wealth of information and stay updated on important events and daily news. Social media provided real-time updates and a diverse range of perspectives, allowing students to be rapidly informed. Furthermore, social media has revolutionized communication. It connects people from across the globe and allows people to share information and experiences. Social media has given people and businesses a platform to engage in different communities and express themselves.</p>
+<p>However, there is a dark side of social media. Students can be more exposed to fake news. It is easy for people to spread misinformation, which can lead to a rapid increase of false narratives. Due to the nature of social media, these false narratives can reach a wide audience before the information is verified. According to a research of scholars from Stanford (Spector, 2019), students don’t have enough ability to recognise fake news, so they will believe faster what is on the internet without being critical. Moreover, excessive use of social media can lead to problems such as addiction and health issues. The exposure of filtered content on social media platforms can set unrealistic expectations and can cause people to have a low self-esteem.</p>
+<p>This story consists of a few components. The first chapter is the “Dataset en preprocessing”. In this chapter are the datasets described and how we preprocess them. Preprocess means where we found the dataset and how we processed the dataset into a visualization. The next chapter consists of the dataset visualizations with each a caption and title. At last, we will dive deeper into our perspectives with multiple arguments.</p>
+</div>
+<div class="section" id="dataset-and-preprocessing">
+<h2>Dataset and preprocessing<a class="headerlink" href="#dataset-and-preprocessing" title="Permalink to this headline">#</a></h2>
+<div class="section" id="average-screentime">
+<h3>1 Average screentime<a class="headerlink" href="#average-screentime" title="Permalink to this headline">#</a></h3>
+<p>The first dataset will show the average screen time of 45 countries. The dataset includes information such as time spent on devices, time spent on social media and the usage of the internet via mobiles, computers, etc. Worldwide, the average person has a screentime of 6 hours and 37 minutes. This dataset provides an opportunity to analyze the digital habits and trends across different countries. The initial dataset was obtained from <a class="reference external" href="http://kaggle.com">kaggle.com</a> in the form of a CSV file. To portray the average duration of device usage and social media engagement per country, the data underwent preprocessing. In order to appropriately preprocess the data, the time variable was converted into a decimal value. Both the variables ‘Time Spent on Devices’ and ‘Time Spent using Social Media’ are graphically represented in a bar chart.</p>
+</div>
+<div class="section" id="effects-of-social-media">
+<h3>2 Effects of social media<a class="headerlink" href="#effects-of-social-media" title="Permalink to this headline">#</a></h3>
+<p>The second dataset contains data about the usage of social media by students. Information about the students’ habits and preferences are provided, such as their preferred social media platform, the amount of time they spend on social media and their preferred communication methods. The dataset provides opportunities to analyze the impact of social media on students’ lives. The subsequent dataset, sourced from data.world, was provided as an XLSX file. Prior to analysis, the data was subjected to preprocessing to illustrate the occurrences of various types of cybercrime victims and the favored mode of communication. Both aspects are presented individually through two distinct donut charts. Since participants were allowed to select multiple options, the occurrences of each option were aggregated. Using the same dataset employed for the donut charts, we further processed the data to showcase the daily levels of physical activity and social interaction. These statistics are visually depicted using two pie charts.</p>
+</div>
+<div class="section" id="factors-contributing-to-internet-addiction">
+<h3>3 Factors contributing to internet addiction.<a class="headerlink" href="#factors-contributing-to-internet-addiction" title="Permalink to this headline">#</a></h3>
+<p>The third dataset provides data about factors contributing to internet addiction across a diverse age group. Among the participants, 6.7% were classified as addictive internet users. The main contributing factors were found to be a high use of discussion forums, a lack of self care and engaging in online video gaming. By analyzing the different factors that influence internet addiction across different age groups, it’s possible to understand the underlying problem. The third dataset was discovered on <a class="reference external" href="http://figshare.com">figshare.com</a> in the form of a SAV file. For appropriate preprocessing, the columns in the file were renamed to enhance the overall presentation, for instance, changing ‘DASS21_depression’ to ‘depression’. Subsequently, a box plot was generated to visualize the anxiety, depression, and stress levels of individuals who engage in social media usage.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Import packages</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">plotly.graph_objs</span> <span class="k">as</span> <span class="nn">go</span>
 <span class="kn">import</span> <span class="nn">plotly.express</span> <span class="k">as</span> <span class="nn">px</span>
 <span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">textwrap</span>
 </pre></div>
 </div>
 </div>
 </div>
-<div class="section" id="load-data">
-<h2>Load data<a class="headerlink" href="#load-data" title="Permalink to this headline">#</a></h2>
-<p>You can put your data at the same directory as the notebook file and then use <code class="docutils literal notranslate"><span class="pre">pandas</span></code> to load the data.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Load the Iris flower dataset using pandas</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;iris_data.csv&quot;</span><span class="p">)</span>
-<span class="n">df</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;screen.csv&#39;</span><span class="p">)</span>
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
+<span class="k">def</span> <span class="nf">time_to_decimal</span><span class="p">(</span><span class="n">time_str</span><span class="p">):</span>
+    <span class="n">hours</span><span class="p">,</span> <span class="n">minutes</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="n">time_str</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;:&#39;</span><span class="p">))</span>
+    <span class="n">decimal_hours</span> <span class="o">=</span> <span class="n">hours</span> <span class="o">+</span> <span class="n">minutes</span> <span class="o">/</span> <span class="mi">60</span>
+    <span class="k">return</span> <span class="n">decimal_hours</span>
 
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>sepal_length</th>
-      <th>sepal_width</th>
-      <th>petal_length</th>
-      <th>petal_width</th>
-      <th>species</th>
-      <th>species_id</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>5.1</td>
-      <td>3.5</td>
-      <td>1.4</td>
-      <td>0.2</td>
-      <td>setosa</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>4.9</td>
-      <td>3.0</td>
-      <td>1.4</td>
-      <td>0.2</td>
-      <td>setosa</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>4.7</td>
-      <td>3.2</td>
-      <td>1.3</td>
-      <td>0.2</td>
-      <td>setosa</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>4.6</td>
-      <td>3.1</td>
-      <td>1.5</td>
-      <td>0.2</td>
-      <td>setosa</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>5.0</td>
-      <td>3.6</td>
-      <td>1.4</td>
-      <td>0.2</td>
-      <td>setosa</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>145</th>
-      <td>6.7</td>
-      <td>3.0</td>
-      <td>5.2</td>
-      <td>2.3</td>
-      <td>virginica</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <th>146</th>
-      <td>6.3</td>
-      <td>2.5</td>
-      <td>5.0</td>
-      <td>1.9</td>
-      <td>virginica</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <th>147</th>
-      <td>6.5</td>
-      <td>3.0</td>
-      <td>5.2</td>
-      <td>2.0</td>
-      <td>virginica</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <th>148</th>
-      <td>6.2</td>
-      <td>3.4</td>
-      <td>5.4</td>
-      <td>2.3</td>
-      <td>virginica</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <th>149</th>
-      <td>5.9</td>
-      <td>3.0</td>
-      <td>5.1</td>
-      <td>1.8</td>
-      <td>virginica</td>
-      <td>3</td>
-    </tr>
-  </tbody>
-</table>
-<p>150 rows × 6 columns</p>
-</div></div></div>
-</div>
-</div>
-<div class="section" id="plot-data">
-<h2>Plot data<a class="headerlink" href="#plot-data" title="Permalink to this headline">#</a></h2>
-<p>We set the repository in a way that you can use <a class="reference external" href="https://plotly.com/python/">Plotly</a> for interactive visualizations.
-For more information, check <a class="reference external" href="https://jupyterbook.org/en/stable/interactive/interactive.html">this documentation</a>.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Plot the Iris dataset using Plotly</span>
-<span class="n">g1</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">scatter_3d</span><span class="p">(</span><span class="n">df</span><span class="p">,</span>
-                   <span class="n">x</span><span class="o">=</span><span class="s2">&quot;sepal_width&quot;</span><span class="p">,</span>
-                   <span class="n">y</span><span class="o">=</span><span class="s2">&quot;sepal_length&quot;</span><span class="p">,</span>
-                   <span class="n">z</span><span class="o">=</span><span class="s2">&quot;petal_width&quot;</span><span class="p">,</span>
-                   <span class="n">color</span><span class="o">=</span><span class="s2">&quot;species&quot;</span><span class="p">,</span>
-                   <span class="n">size</span><span class="o">=</span><span class="s2">&quot;petal_length&quot;</span><span class="p">,</span>
-                   <span class="n">opacity</span><span class="o">=</span><span class="mf">0.6</span><span class="p">,</span>
-                   <span class="n">size_max</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span>
-                   <span class="n">height</span><span class="o">=</span><span class="mi">700</span><span class="p">)</span>
-<span class="n">g1</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;Total Time Spent on Devices&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Total Time Spent on Devices&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">time_to_decimal</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;Time Spent using Social Media&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Time Spent using Social Media&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">time_to_decimal</span><span class="p">)</span>
+
+<span class="n">countries</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Netherlands&#39;</span><span class="p">,</span> <span class="s1">&#39;Worldwide&#39;</span><span class="p">,</span> <span class="s1">&#39;Brazil&#39;</span><span class="p">,</span> <span class="s1">&#39;Russia&#39;</span><span class="p">,</span> <span class="s1">&#39;USA&#39;</span><span class="p">,</span> <span class="s1">&#39;Indonesia&#39;</span><span class="p">,</span> <span class="s1">&#39;China&#39;</span><span class="p">,</span> <span class="s1">&#39;Australia&#39;</span><span class="p">,</span> <span class="s1">&#39;South Africa&#39;</span><span class="p">,</span> <span class="s1">&#39;UK&#39;</span><span class="p">,</span> <span class="s1">&#39;France&#39;</span><span class="p">,</span> <span class="s1">&#39;Germany&#39;</span><span class="p">,</span> <span class="s1">&#39;Saudi Arabia&#39;</span><span class="p">,</span> <span class="s1">&#39;India&#39;</span><span class="p">,</span> <span class="s1">&#39;Japan&#39;</span><span class="p">]</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">Country</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">countries</span><span class="p">)]</span>
+
+<span class="n">trace1</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Bar</span><span class="p">(</span>
+    <span class="n">x</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Country&#39;</span><span class="p">],</span>
+    <span class="n">y</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Total Time Spent on Devices&#39;</span><span class="p">],</span>
+    <span class="n">name</span><span class="o">=</span><span class="s1">&#39;Total Time Spent on Devices&#39;</span><span class="p">,</span>
+    <span class="n">marker</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;#FFAC1C&#39;</span><span class="p">)</span>
+<span class="p">)</span>
+<span class="n">trace2</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Bar</span><span class="p">(</span>
+    <span class="n">x</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Country&#39;</span><span class="p">],</span>
+    <span class="n">y</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Time Spent using Social Media&#39;</span><span class="p">],</span>
+    <span class="n">name</span><span class="o">=</span><span class="s1">&#39;Time Spent using Social Media&#39;</span><span class="p">,</span>
+    <span class="n">marker</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;DodgerBlue&#39;</span><span class="p">))</span>
+
+
+<span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="n">trace1</span><span class="p">,</span> <span class="n">trace2</span><span class="p">]</span>
+
+<span class="n">layout</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Layout</span><span class="p">(</span>
+    <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Total time spent on screentime and social media worldwide&#39;</span><span class="p">,</span>
+    <span class="n">xaxis</span><span class="o">=</span><span class="n">go</span><span class="o">.</span><span class="n">layout</span><span class="o">.</span><span class="n">XAxis</span><span class="p">(</span>
+        <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;category&#39;</span> <span class="p">,</span>
+        <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Country&#39;</span>
+    <span class="p">),</span>
+    <span class="n">yaxis</span><span class="o">=</span><span class="n">go</span><span class="o">.</span><span class="n">layout</span><span class="o">.</span><span class="n">YAxis</span><span class="p">(</span>
+        <span class="n">tickformat</span><span class="o">=</span><span class="s1">&#39;,.Of&#39;</span><span class="p">,</span>
+        <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Time (hours)&#39;</span> 
+    <span class="p">),</span>
+    <span class="n">height</span><span class="o">=</span><span class="mi">400</span>
+<span class="p">)</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Figure</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span> <span class="n">layout</span><span class="o">=</span><span class="n">layout</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -589,9 +504,9 @@ For more information, check <a class="reference external" href="https://jupyterb
         });
         }
         </script>
-        </div><div class="output text_html"><div>                            <div id="b9c7d98d-d582-4dcc-9ce5-5fe0aa47098f" class="plotly-graph-div" style="height:700px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("b9c7d98d-d582-4dcc-9ce5-5fe0aa47098f")) {                    Plotly.newPlot(                        "b9c7d98d-d582-4dcc-9ce5-5fe0aa47098f",                        [{"hovertemplate":"species=setosa\u003cbr\u003esepal_width=%{x}\u003cbr\u003esepal_length=%{y}\u003cbr\u003epetal_width=%{z}\u003cbr\u003epetal_length=%{marker.size}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"setosa","marker":{"color":"#636efa","opacity":0.6,"size":[1.4,1.4,1.3,1.5,1.4,1.7,1.4,1.5,1.4,1.5,1.5,1.6,1.4,1.1,1.2,1.5,1.3,1.4,1.7,1.5,1.7,1.5,1.0,1.7,1.9,1.6,1.6,1.5,1.4,1.6,1.6,1.5,1.5,1.4,1.5,1.2,1.3,1.5,1.3,1.5,1.3,1.3,1.3,1.6,1.9,1.4,1.6,1.4,1.5,1.4],"sizemode":"area","sizeref":0.007666666666666667,"symbol":"circle"},"mode":"markers","name":"setosa","scene":"scene","showlegend":true,"x":[3.5,3.0,3.2,3.1,3.6,3.9,3.4,3.4,2.9,3.1,3.7,3.4,3.0,3.0,4.0,4.4,3.9,3.5,3.8,3.8,3.4,3.7,3.6,3.3,3.4,3.0,3.4,3.5,3.4,3.2,3.1,3.4,4.1,4.2,3.1,3.2,3.5,3.1,3.0,3.4,3.5,2.3,3.2,3.5,3.8,3.0,3.8,3.2,3.7,3.3],"y":[5.1,4.9,4.7,4.6,5.0,5.4,4.6,5.0,4.4,4.9,5.4,4.8,4.8,4.3,5.8,5.7,5.4,5.1,5.7,5.1,5.4,5.1,4.6,5.1,4.8,5.0,5.0,5.2,5.2,4.7,4.8,5.4,5.2,5.5,4.9,5.0,5.5,4.9,4.4,5.1,5.0,4.5,4.4,5.0,5.1,4.8,5.1,4.6,5.3,5.0],"z":[0.2,0.2,0.2,0.2,0.2,0.4,0.3,0.2,0.2,0.1,0.2,0.2,0.1,0.1,0.2,0.4,0.4,0.3,0.3,0.3,0.2,0.4,0.2,0.5,0.2,0.2,0.4,0.2,0.2,0.2,0.2,0.4,0.1,0.2,0.1,0.2,0.2,0.1,0.2,0.2,0.3,0.3,0.2,0.6,0.4,0.3,0.2,0.2,0.2,0.2],"type":"scatter3d"},{"hovertemplate":"species=versicolor\u003cbr\u003esepal_width=%{x}\u003cbr\u003esepal_length=%{y}\u003cbr\u003epetal_width=%{z}\u003cbr\u003epetal_length=%{marker.size}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"versicolor","marker":{"color":"#EF553B","opacity":0.6,"size":[4.7,4.5,4.9,4.0,4.6,4.5,4.7,3.3,4.6,3.9,3.5,4.2,4.0,4.7,3.6,4.4,4.5,4.1,4.5,3.9,4.8,4.0,4.9,4.7,4.3,4.4,4.8,5.0,4.5,3.5,3.8,3.7,3.9,5.1,4.5,4.5,4.7,4.4,4.1,4.0,4.4,4.6,4.0,3.3,4.2,4.2,4.2,4.3,3.0,4.1],"sizemode":"area","sizeref":0.007666666666666667,"symbol":"circle"},"mode":"markers","name":"versicolor","scene":"scene","showlegend":true,"x":[3.2,3.2,3.1,2.3,2.8,2.8,3.3,2.4,2.9,2.7,2.0,3.0,2.2,2.9,2.9,3.1,3.0,2.7,2.2,2.5,3.2,2.8,2.5,2.8,2.9,3.0,2.8,3.0,2.9,2.6,2.4,2.4,2.7,2.7,3.0,3.4,3.1,2.3,3.0,2.5,2.6,3.0,2.6,2.3,2.7,3.0,2.9,2.9,2.5,2.8],"y":[7.0,6.4,6.9,5.5,6.5,5.7,6.3,4.9,6.6,5.2,5.0,5.9,6.0,6.1,5.6,6.7,5.6,5.8,6.2,5.6,5.9,6.1,6.3,6.1,6.4,6.6,6.8,6.7,6.0,5.7,5.5,5.5,5.8,6.0,5.4,6.0,6.7,6.3,5.6,5.5,5.5,6.1,5.8,5.0,5.6,5.7,5.7,6.2,5.1,5.7],"z":[1.4,1.5,1.5,1.3,1.5,1.3,1.6,1.0,1.3,1.4,1.0,1.5,1.0,1.4,1.3,1.4,1.5,1.0,1.5,1.1,1.8,1.3,1.5,1.2,1.3,1.4,1.4,1.7,1.5,1.0,1.1,1.0,1.2,1.6,1.5,1.6,1.5,1.3,1.3,1.3,1.2,1.4,1.2,1.0,1.3,1.2,1.3,1.3,1.1,1.3],"type":"scatter3d"},{"hovertemplate":"species=virginica\u003cbr\u003esepal_width=%{x}\u003cbr\u003esepal_length=%{y}\u003cbr\u003epetal_width=%{z}\u003cbr\u003epetal_length=%{marker.size}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"virginica","marker":{"color":"#00cc96","opacity":0.6,"size":[6.0,5.1,5.9,5.6,5.8,6.6,4.5,6.3,5.8,6.1,5.1,5.3,5.5,5.0,5.1,5.3,5.5,6.7,6.9,5.0,5.7,4.9,6.7,4.9,5.7,6.0,4.8,4.9,5.6,5.8,6.1,6.4,5.6,5.1,5.6,6.1,5.6,5.5,4.8,5.4,5.6,5.1,5.1,5.9,5.7,5.2,5.0,5.2,5.4,5.1],"sizemode":"area","sizeref":0.007666666666666667,"symbol":"circle"},"mode":"markers","name":"virginica","scene":"scene","showlegend":true,"x":[3.3,2.7,3.0,2.9,3.0,3.0,2.5,2.9,2.5,3.6,3.2,2.7,3.0,2.5,2.8,3.2,3.0,3.8,2.6,2.2,3.2,2.8,2.8,2.7,3.3,3.2,2.8,3.0,2.8,3.0,2.8,3.8,2.8,2.8,2.6,3.0,3.4,3.1,3.0,3.1,3.1,3.1,2.7,3.2,3.3,3.0,2.5,3.0,3.4,3.0],"y":[6.3,5.8,7.1,6.3,6.5,7.6,4.9,7.3,6.7,7.2,6.5,6.4,6.8,5.7,5.8,6.4,6.5,7.7,7.7,6.0,6.9,5.6,7.7,6.3,6.7,7.2,6.2,6.1,6.4,7.2,7.4,7.9,6.4,6.3,6.1,7.7,6.3,6.4,6.0,6.9,6.7,6.9,5.8,6.8,6.7,6.7,6.3,6.5,6.2,5.9],"z":[2.5,1.9,2.1,1.8,2.2,2.1,1.7,1.8,1.8,2.5,2.0,1.9,2.1,2.0,2.4,2.3,1.8,2.2,2.3,1.5,2.3,2.0,2.0,1.8,2.1,1.8,1.8,1.8,2.1,1.6,1.9,2.0,2.2,1.5,1.4,2.3,2.4,1.8,1.8,2.1,2.4,2.3,1.9,2.3,2.5,2.3,1.9,2.0,2.3,1.8],"type":"scatter3d"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmapgl":[{"type":"heatmapgl","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"scene":{"domain":{"x":[0.0,1.0],"y":[0.0,1.0]},"xaxis":{"title":{"text":"sepal_width"}},"yaxis":{"title":{"text":"sepal_length"}},"zaxis":{"title":{"text":"petal_width"}}},"legend":{"title":{"text":"species"},"tracegroupgap":0,"itemsizing":"constant"},"margin":{"t":60},"height":700},                        {"responsive": true}                    ).then(function(){
+        </div><div class="output text_html"><div>                            <div id="764af857-e012-4315-be63-bbc656fef826" class="plotly-graph-div" style="height:400px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("764af857-e012-4315-be63-bbc656fef826")) {                    Plotly.newPlot(                        "764af857-e012-4315-be63-bbc656fef826",                        [{"marker":{"color":"#FFAC1C"},"name":"Total Time Spent on Devices","x":["Australia","Brazil","China","France","Germany","Indonesia","Japan","Netherlands","Russia","Saudi Arabia","South Africa","UK","USA","Worldwide"],"y":[5.85,9.533333333333333,5.416666666666667,5.433333333333334,5.2,7.7,3.75,5.45,7.95,7.333333333333333,9.633333333333333,5.783333333333333,6.983333333333333,6.616666666666667],"type":"bar"},{"marker":{"color":"DodgerBlue"},"name":"Time Spent using Social Media","x":["Australia","Brazil","China","France","Germany","Indonesia","Japan","Netherlands","Russia","Saudi Arabia","South Africa","UK","USA","Worldwide"],"y":[2.066666666666667,3.7666666666666666,1.9833333333333334,1.9166666666666665,1.6833333333333333,3.3,0.85,1.65,2.2666666666666666,3.0166666666666666,3.7333333333333334,1.9333333333333333,2.2666666666666666,2.5166666666666666],"type":"bar"}],                        {"height":400,"title":{"text":"Total time spent on screentime and social media worldwide"},"xaxis":{"title":{"text":"Country"},"type":"category"},"yaxis":{"tickformat":",.Of","title":{"text":"Time (hours)"}},"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmapgl":[{"type":"heatmapgl","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}}},                        {"responsive": true}                    ).then(function(){
                             
-var gd = document.getElementById('b9c7d98d-d582-4dcc-9ce5-5fe0aa47098f');
+var gd = document.getElementById('764af857-e012-4315-be63-bbc656fef826');
 var x = new MutationObserver(function (mutations, observer) {{
         var display = window.getComputedStyle(gd).display;
         if (!display || display === 'none') {{
@@ -615,23 +530,316 @@ if (outputEl) {{
 
                         })                };                });            </script>        </div></div></div>
 </div>
-<p>You can also plot the data using static visualizations, such as the <a class="reference external" href="https://seaborn.pydata.org/#">seaborn</a> library.</p>
+<p>In this dataset we can observe the total time spent on screentime and social media worldwide. The screentime of each country is different and the time spent using social media is a significant part of the total time spent on devices. This shows that social media is widely used and people will keep using it. Furthermore, the chart shows that there is not a linear correlation between the size of the country and time spent on devices and social media. For example, the total time spent on devices is similar between China and the Netherlands.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Plot the Iris dataset using seaborn</span>
-<span class="n">g2</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">pairplot</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s2">&quot;species_id&quot;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>
-                  <span class="n">hue</span><span class="o">=</span><span class="s1">&#39;species&#39;</span><span class="p">)</span>
-<span class="n">g2</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s1">&#39;effect.xlsx&#39;</span><span class="p">)</span>
+
+<span class="n">fp</span> <span class="o">=</span> <span class="n">df1</span><span class="p">[</span><span class="s1">&#39;Have you ever been a victim of any of these cyber crimes?&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="s1">&#39;Fake profiles&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="n">h</span> <span class="o">=</span> <span class="n">df1</span><span class="p">[</span><span class="s1">&#39;Have you ever been a victim of any of these cyber crimes?&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="s1">&#39;Hacking&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="n">p</span> <span class="o">=</span> <span class="n">df1</span><span class="p">[</span><span class="s1">&#39;Have you ever been a victim of any of these cyber crimes?&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="s1">&#39;Photos being misused&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="n">n</span> <span class="o">=</span> <span class="n">df1</span><span class="p">[</span><span class="s1">&#39;Have you ever been a victim of any of these cyber crimes?&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="s1">&#39;None of the above&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+
+<span class="nb">list</span> <span class="o">=</span> <span class="p">[</span><span class="n">fp</span><span class="p">,</span> <span class="n">h</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">n</span><span class="p">]</span>
+
+<span class="n">trace</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Pie</span><span class="p">(</span>
+    <span class="n">labels</span> <span class="o">=</span> <span class="n">df1</span><span class="p">[</span><span class="s1">&#39;Have you ever been a victim of any of these cyber crimes?&#39;</span><span class="p">],</span>
+    <span class="n">values</span> <span class="o">=</span> <span class="nb">list</span><span class="p">,</span>
+    <span class="n">hole</span> <span class="o">=</span> <span class="mf">0.8</span>
+<span class="p">)</span>
+
+<span class="n">fig1</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Figure</span><span class="p">(</span><span class="n">trace</span><span class="p">)</span>
+
+<span class="n">fig1</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span><span class="n">height</span> <span class="o">=</span> <span class="mi">600</span><span class="p">)</span>
+<span class="n">fig1</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span><span class="n">showlegend</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>
+<span class="n">fig1</span><span class="o">.</span><span class="n">update_traces</span><span class="p">(</span><span class="n">marker</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">colors</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">colors</span><span class="o">.</span><span class="n">qualitative</span><span class="o">.</span><span class="n">T10</span><span class="p">))</span>
+<span class="n">fig1</span><span class="o">.</span><span class="n">update_traces</span><span class="p">(</span><span class="n">textposition</span> <span class="o">=</span> <span class="s1">&#39;outside&#39;</span><span class="p">,</span> <span class="n">textinfo</span><span class="o">=</span><span class="s1">&#39;percent + label&#39;</span><span class="p">)</span>
+<span class="n">fig1</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span><span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;Various types of cyber crime victims&#39;</span><span class="p">)</span>
+
+<span class="n">fig1</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="n">ff</span> <span class="o">=</span> <span class="n">df1</span><span class="p">[</span><span class="s1">&#39;Which type of communication do you generally prefer?&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="s1">&#39;face to face&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="n">tm</span> <span class="o">=</span> <span class="n">df1</span><span class="p">[</span><span class="s1">&#39;Which type of communication do you generally prefer?&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="s1">&#39;Text message&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="n">tp</span> <span class="o">=</span> <span class="n">df1</span><span class="p">[</span><span class="s1">&#39;Which type of communication do you generally prefer?&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="s1">&#39;through phone&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="n">tsm</span> <span class="o">=</span> <span class="n">df1</span><span class="p">[</span><span class="s1">&#39;Which type of communication do you generally prefer?&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="s1">&#39;through social media&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+
+<span class="n">list2</span> <span class="o">=</span> <span class="p">[</span><span class="n">ff</span><span class="p">,</span> <span class="n">tm</span><span class="p">,</span> <span class="n">tp</span><span class="p">,</span> <span class="n">tsm</span><span class="p">]</span>
+
+<span class="n">trace1</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Pie</span><span class="p">(</span>
+    <span class="n">labels</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Face to face&#39;</span><span class="p">,</span> <span class="s1">&#39;Text message&#39;</span><span class="p">,</span> <span class="s1">&#39;Through phone&#39;</span><span class="p">,</span> <span class="s1">&#39;Through social media&#39;</span><span class="p">],</span>
+    <span class="n">values</span> <span class="o">=</span> <span class="n">list2</span><span class="p">,</span>
+    <span class="n">hole</span> <span class="o">=</span> <span class="mf">0.8</span>
+<span class="p">)</span>
+
+<span class="n">fig2</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Figure</span><span class="p">(</span><span class="n">trace1</span><span class="p">)</span>
+<span class="n">fig2</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span><span class="n">height</span> <span class="o">=</span> <span class="mi">600</span><span class="p">)</span>
+<span class="n">fig2</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span><span class="n">showlegend</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>
+<span class="n">fig2</span><span class="o">.</span><span class="n">update_traces</span><span class="p">(</span><span class="n">marker</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;#0A549F&quot;</span><span class="p">,</span> <span class="s2">&quot;#7a5195&quot;</span><span class="p">,</span> <span class="s2">&quot;#ef5675&quot;</span><span class="p">,</span> <span class="s2">&quot;#ffa600&quot;</span><span class="p">]))</span>
+<span class="n">fig2</span><span class="o">.</span><span class="n">update_traces</span><span class="p">(</span><span class="n">textposition</span> <span class="o">=</span> <span class="s1">&#39;outside&#39;</span><span class="p">,</span> <span class="n">textinfo</span><span class="o">=</span><span class="s1">&#39;percent + label&#39;</span><span class="p">)</span>
+<span class="n">fig2</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span><span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;Preferred communication type&#39;</span><span class="p">)</span>
+
+<span class="n">fig2</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;seaborn.axisgrid.PairGrid at 0x282646a9df0&gt;
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="nn">File ~\miniconda3\envs\jupyterbook\lib\site-packages\pandas\compat\_optional.py:142,</span> in <span class="ni">import_optional_dependency</span><span class="nt">(name, extra, errors, min_version)</span>
+<span class="g g-Whitespace">    </span><span class="mi">141</span> <span class="k">try</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">142</span>     <span class="n">module</span> <span class="o">=</span> <span class="n">importlib</span><span class="o">.</span><span class="n">import_module</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">143</span> <span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
+
+<span class="nn">File ~\miniconda3\envs\jupyterbook\lib\importlib\__init__.py:127,</span> in <span class="ni">import_module</span><span class="nt">(name, package)</span>
+<span class="g g-Whitespace">    </span><span class="mi">126</span>         <span class="n">level</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="ne">--&gt; </span><span class="mi">127</span> <span class="k">return</span> <span class="n">_bootstrap</span><span class="o">.</span><span class="n">_gcd_import</span><span class="p">(</span><span class="n">name</span><span class="p">[</span><span class="n">level</span><span class="p">:],</span> <span class="n">package</span><span class="p">,</span> <span class="n">level</span><span class="p">)</span>
+
+<span class="nn">File &lt;frozen importlib._bootstrap&gt;:1030,</span> in <span class="ni">_gcd_import</span><span class="nt">(name, package, level)</span>
+
+<span class="nn">File &lt;frozen importlib._bootstrap&gt;:1007,</span> in <span class="ni">_find_and_load</span><span class="nt">(name, import_)</span>
+
+<span class="nn">File &lt;frozen importlib._bootstrap&gt;:984,</span> in <span class="ni">_find_and_load_unlocked</span><span class="nt">(name, import_)</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;openpyxl&#39;
+
+<span class="n">During</span> <span class="n">handling</span> <span class="n">of</span> <span class="n">the</span> <span class="n">above</span> <span class="n">exception</span><span class="p">,</span> <span class="n">another</span> <span class="n">exception</span> <span class="n">occurred</span><span class="p">:</span>
+
+<span class="ne">ImportError</span><span class="g g-Whitespace">                               </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">df1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s1">&#39;effect.xlsx&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">fp</span> <span class="o">=</span> <span class="n">df1</span><span class="p">[</span><span class="s1">&#39;Have you ever been a victim of any of these cyber crimes?&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="s1">&#39;Fake profiles&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="n">h</span> <span class="o">=</span> <span class="n">df1</span><span class="p">[</span><span class="s1">&#39;Have you ever been a victim of any of these cyber crimes?&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="s1">&#39;Hacking&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+
+<span class="nn">File ~\miniconda3\envs\jupyterbook\lib\site-packages\pandas\io\excel\_base.py:478,</span> in <span class="ni">read_excel</span><span class="nt">(io, sheet_name, header, names, index_col, usecols, dtype, engine, converters, true_values, false_values, skiprows, nrows, na_values, keep_default_na, na_filter, verbose, parse_dates, date_parser, date_format, thousands, decimal, comment, skipfooter, storage_options, dtype_backend)</span>
+<span class="g g-Whitespace">    </span><span class="mi">476</span> <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">io</span><span class="p">,</span> <span class="n">ExcelFile</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">477</span>     <span class="n">should_close</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="ne">--&gt; </span><span class="mi">478</span>     <span class="n">io</span> <span class="o">=</span> <span class="n">ExcelFile</span><span class="p">(</span><span class="n">io</span><span class="p">,</span> <span class="n">storage_options</span><span class="o">=</span><span class="n">storage_options</span><span class="p">,</span> <span class="n">engine</span><span class="o">=</span><span class="n">engine</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">479</span> <span class="k">elif</span> <span class="n">engine</span> <span class="ow">and</span> <span class="n">engine</span> <span class="o">!=</span> <span class="n">io</span><span class="o">.</span><span class="n">engine</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">480</span>     <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">481</span>         <span class="s2">&quot;Engine should not be specified when passing &quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">482</span>         <span class="s2">&quot;an ExcelFile - ExcelFile already has the engine set&quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">483</span>     <span class="p">)</span>
+
+<span class="nn">File ~\miniconda3\envs\jupyterbook\lib\site-packages\pandas\io\excel\_base.py:1513,</span> in <span class="ni">ExcelFile.__init__</span><span class="nt">(self, path_or_buffer, engine, storage_options)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1510</span> <span class="bp">self</span><span class="o">.</span><span class="n">engine</span> <span class="o">=</span> <span class="n">engine</span>
+<span class="g g-Whitespace">   </span><span class="mi">1511</span> <span class="bp">self</span><span class="o">.</span><span class="n">storage_options</span> <span class="o">=</span> <span class="n">storage_options</span>
+<span class="ne">-&gt; </span><span class="mi">1513</span> <span class="bp">self</span><span class="o">.</span><span class="n">_reader</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_engines</span><span class="p">[</span><span class="n">engine</span><span class="p">](</span><span class="bp">self</span><span class="o">.</span><span class="n">_io</span><span class="p">,</span> <span class="n">storage_options</span><span class="o">=</span><span class="n">storage_options</span><span class="p">)</span>
+
+<span class="nn">File ~\miniconda3\envs\jupyterbook\lib\site-packages\pandas\io\excel\_openpyxl.py:548,</span> in <span class="ni">OpenpyxlReader.__init__</span><span class="nt">(self, filepath_or_buffer, storage_options)</span>
+<span class="g g-Whitespace">    </span><span class="mi">533</span> <span class="nd">@doc</span><span class="p">(</span><span class="n">storage_options</span><span class="o">=</span><span class="n">_shared_docs</span><span class="p">[</span><span class="s2">&quot;storage_options&quot;</span><span class="p">])</span>
+<span class="g g-Whitespace">    </span><span class="mi">534</span> <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">535</span>     <span class="bp">self</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">536</span>     <span class="n">filepath_or_buffer</span><span class="p">:</span> <span class="n">FilePath</span> <span class="o">|</span> <span class="n">ReadBuffer</span><span class="p">[</span><span class="nb">bytes</span><span class="p">],</span>
+<span class="g g-Whitespace">    </span><span class="mi">537</span>     <span class="n">storage_options</span><span class="p">:</span> <span class="n">StorageOptions</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">538</span> <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">539</span><span class="w">     </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">540</span><span class="sd">     Reader using openpyxl engine.</span>
+<span class="g g-Whitespace">    </span><span class="mi">541</span><span class="sd"> </span>
+<span class="sd">   (...)</span>
+<span class="g g-Whitespace">    </span><span class="mi">546</span><span class="sd">     {storage_options}</span>
+<span class="g g-Whitespace">    </span><span class="mi">547</span><span class="sd">     &quot;&quot;&quot;</span>
+<span class="ne">--&gt; </span><span class="mi">548</span>     <span class="n">import_optional_dependency</span><span class="p">(</span><span class="s2">&quot;openpyxl&quot;</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">549</span>     <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">,</span> <span class="n">storage_options</span><span class="o">=</span><span class="n">storage_options</span><span class="p">)</span>
+
+<span class="nn">File ~\miniconda3\envs\jupyterbook\lib\site-packages\pandas\compat\_optional.py:145,</span> in <span class="ni">import_optional_dependency</span><span class="nt">(name, extra, errors, min_version)</span>
+<span class="g g-Whitespace">    </span><span class="mi">143</span> <span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">144</span>     <span class="k">if</span> <span class="n">errors</span> <span class="o">==</span> <span class="s2">&quot;raise&quot;</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">145</span>         <span class="k">raise</span> <span class="ne">ImportError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">146</span>     <span class="k">return</span> <span class="kc">None</span>
+<span class="g g-Whitespace">    </span><span class="mi">148</span> <span class="c1"># Handle submodules: if we have submodule, grab parent module from sys.modules</span>
+
+<span class="ne">ImportError</span>: Missing optional dependency &#39;openpyxl&#39;.  Use pip or conda to install openpyxl.
 </pre></div>
 </div>
-<img alt="../_images/4cb5299e72a74a811e76332d4a7351d49179872331a9bbaaa5d03d47ebecb3ab.png" src="../_images/4cb5299e72a74a811e76332d4a7351d49179872331a9bbaaa5d03d47ebecb3ab.png" />
 </div>
 </div>
+<p>This visualization consists of two charts. The first chart is about the various types of cyber crime victims. In the first chart we can observe that fake profiles are the type of cyber crime which people are the most common victim of. The second chart is about preferred communication types. The second chart shows that face to face communication is the most preferred communication type.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_spss</span><span class="p">(</span><span class="s1">&#39;addiction.sav&#39;</span><span class="p">)</span>
+
+<span class="n">df</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;DASS21_depression&#39;</span><span class="p">:</span> <span class="s1">&#39;Depression&#39;</span><span class="p">,</span> <span class="s1">&#39;DASS21_anxiety&#39;</span><span class="p">:</span> <span class="s1">&#39;Anxiety&#39;</span><span class="p">,</span> <span class="s1">&#39;DASS21_stress&#39;</span><span class="p">:</span> <span class="s1">&#39;Stress&#39;</span><span class="p">},</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">order</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Never&#39;</span><span class="p">,</span> <span class="s1">&#39;Seldom&#39;</span><span class="p">,</span> <span class="s1">&#39;Sometimes&#39;</span><span class="p">,</span> <span class="s1">&#39;Often&#39;</span><span class="p">,</span> <span class="s1">&#39;Very Often&#39;</span><span class="p">]</span>
+
+<span class="n">fig3</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">box</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Anxiety&#39;</span><span class="p">,</span> <span class="s1">&#39;Depression&#39;</span><span class="p">,</span> <span class="s1">&#39;Stress&#39;</span><span class="p">],</span>
+             <span class="n">labels</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;variable&#39;</span><span class="p">:</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;value&#39;</span><span class="p">:</span> <span class="s1">&#39;Scale&#39;</span><span class="p">},</span> 
+             <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Relation between DASS Scale and Social Network Usage&#39;</span><span class="p">,</span> <span class="n">facet_col</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Social_Network&#39;</span><span class="p">],</span> 
+             <span class="n">color</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Social_Network&#39;</span><span class="p">],</span> <span class="n">category_orders</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;Social_Network&#39;</span><span class="p">:</span> <span class="n">order</span><span class="p">})</span>
+
+<span class="n">fig3</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+<p>The figure presented above provides a visual about the relationship between the DASS (Depression, Anxiety and Stress Scale) and social network usage. The DASS scale is a psychological analysis tool to measure the severity of these three mental health conditions. It provides a quantitative measure for individuals who suffer from these conditions. Social network usage refers to the frequency to which the participants use online platforms to communicate. The network usage is ordered in an ordinal scale, ranging from the lowest level (‘Never’) to the highest level (‘Very often’). Information about the DASS is displayed in five different boxplots: one boxplot for each level.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="n">df1</span><span class="p">[</span><span class="s1">&#39;How much time do you spend on social media in a day?&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="s1">&#39;none&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="n">l</span> <span class="o">=</span> <span class="n">df1</span><span class="p">[</span><span class="s1">&#39;How much time do you spend on social media in a day?&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="s1">&#39;less than 1 hr&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="n">hr</span> <span class="o">=</span> <span class="n">df1</span><span class="p">[</span><span class="s1">&#39;How much time do you spend on social media in a day?&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="s1">&#39;1 - 2.5 hrs&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="n">up</span> <span class="o">=</span> <span class="n">df1</span><span class="p">[</span><span class="s1">&#39;How much time do you spend on social media in a day?&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="s1">&#39;upto 4 hrs&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="n">mr</span> <span class="o">=</span> <span class="n">df1</span><span class="p">[</span><span class="s1">&#39;How much time do you spend on social media in a day?&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="s1">&#39;more than 4 hrs&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+
+<span class="nb">list</span> <span class="o">=</span> <span class="p">[</span><span class="n">n</span><span class="p">,</span> <span class="n">l</span><span class="p">,</span> <span class="n">hr</span><span class="p">,</span> <span class="n">up</span><span class="p">,</span> <span class="n">mr</span><span class="p">]</span>
+
+<span class="n">trace</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Pie</span><span class="p">(</span>
+    <span class="n">labels</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;none&#39;</span><span class="p">,</span> <span class="s1">&#39;more than 4 hrs&#39;</span><span class="p">,</span> <span class="s1">&#39;up to 4 hrs&#39;</span><span class="p">,</span> <span class="s1">&#39;1 - 2.5 hrs&#39;</span><span class="p">,</span> <span class="s1">&#39;less than 1 hr&#39;</span><span class="p">],</span>
+    <span class="n">values</span> <span class="o">=</span> <span class="nb">list</span><span class="p">,</span>
+    <span class="n">sort</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="p">)</span>
+
+<span class="n">fig4</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Figure</span><span class="p">(</span><span class="n">trace</span><span class="p">)</span>
+
+<span class="n">fig4</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span><span class="n">height</span> <span class="o">=</span> <span class="mi">600</span><span class="p">)</span>
+<span class="n">fig4</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span><span class="n">showlegend</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>
+<span class="n">fig4</span><span class="o">.</span><span class="n">update_traces</span><span class="p">(</span><span class="n">marker</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;#78f4ff&#39;</span><span class="p">,</span> <span class="s1">&#39;#004c6d&#39;</span><span class="p">,</span> <span class="s1">&#39;#1b7393&#39;</span><span class="p">,</span> <span class="s1">&#39;#369cb9&#39;</span><span class="p">,</span> <span class="s1">&#39;#55c7dd&#39;</span><span class="p">]))</span>
+<span class="n">fig4</span><span class="o">.</span><span class="n">update_traces</span><span class="p">(</span><span class="n">textposition</span> <span class="o">=</span> <span class="s1">&#39;outside&#39;</span><span class="p">,</span> <span class="n">textinfo</span><span class="o">=</span><span class="s1">&#39;percent + label&#39;</span><span class="p">)</span>
+<span class="n">fig4</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span><span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;Amount of social media activity per day&#39;</span><span class="p">)</span>
+<span class="n">fig4</span><span class="o">.</span><span class="n">update_traces</span><span class="p">(</span><span class="n">pull</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mf">0.057</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+
+<span class="n">fig4</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="n">n2</span> <span class="o">=</span> <span class="n">df1</span><span class="p">[</span><span class="s1">&#39;How much time do you spend on physical activities in a day?&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="s1">&#39;none&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="n">l2</span> <span class="o">=</span> <span class="n">df1</span><span class="p">[</span><span class="s1">&#39;How much time do you spend on physical activities in a day?&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="s1">&#39;less than 1 hr&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="n">hr2</span> <span class="o">=</span> <span class="n">df1</span><span class="p">[</span><span class="s1">&#39;How much time do you spend on physical activities in a day?&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="s1">&#39;1 - 2.5 hrs&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="n">up2</span> <span class="o">=</span> <span class="n">df1</span><span class="p">[</span><span class="s1">&#39;How much time do you spend on physical activities in a day?&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="s1">&#39;upto 4 hrs&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="n">mr2</span> <span class="o">=</span> <span class="n">df1</span><span class="p">[</span><span class="s1">&#39;How much time do you spend on physical activities in a day?&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="s1">&#39;more than 4 hrs&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+
+<span class="nb">list</span> <span class="o">=</span> <span class="p">[</span><span class="n">n2</span><span class="p">,</span> <span class="n">l2</span><span class="p">,</span> <span class="n">hr2</span><span class="p">,</span> <span class="n">up2</span><span class="p">,</span> <span class="n">mr2</span><span class="p">]</span>
+
+<span class="n">trace</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Pie</span><span class="p">(</span>
+    <span class="n">labels</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;none&#39;</span><span class="p">,</span> <span class="s1">&#39;more than 4 hrs&#39;</span><span class="p">,</span> <span class="s1">&#39;up to 4 hrs&#39;</span><span class="p">,</span> <span class="s1">&#39;1 - 2.5 hrs&#39;</span><span class="p">,</span> <span class="s1">&#39;less than 1 hr&#39;</span><span class="p">],</span>
+    <span class="n">values</span> <span class="o">=</span> <span class="nb">list</span><span class="p">,</span>
+    <span class="n">sort</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="p">)</span>
+
+<span class="n">fig5</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Figure</span><span class="p">(</span><span class="n">trace</span><span class="p">)</span>
+
+<span class="n">fig5</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span><span class="n">height</span> <span class="o">=</span> <span class="mi">600</span><span class="p">)</span>
+<span class="n">fig5</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span><span class="n">showlegend</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>
+<span class="n">fig5</span><span class="o">.</span><span class="n">update_traces</span><span class="p">(</span><span class="n">marker</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;#7ACF68&#39;</span><span class="p">,</span> <span class="s1">&#39;#266C2C&#39;</span><span class="p">,</span> <span class="s1">&#39;#307529&#39;</span><span class="p">,</span> <span class="s1">&#39;#4A9C35&#39;</span><span class="p">,</span> <span class="s1">&#39;#5CC142&#39;</span><span class="p">]))</span>
+<span class="n">fig5</span><span class="o">.</span><span class="n">update_traces</span><span class="p">(</span><span class="n">textposition</span> <span class="o">=</span> <span class="s1">&#39;outside&#39;</span><span class="p">,</span> <span class="n">textinfo</span><span class="o">=</span><span class="s1">&#39;percent + label&#39;</span><span class="p">)</span>
+<span class="n">fig5</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span><span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;Amount of physical activity per day&#39;</span><span class="p">)</span>
+<span class="n">fig5</span><span class="o">.</span><span class="n">update_traces</span><span class="p">(</span><span class="n">pull</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.057</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+
+<span class="n">fig5</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+<p>This visualization also consists of two charts. The first chart is a pie chart about the amount of time spent on social media in a day. The vast majority of the participants spend 1 - 2.5 hours using social media. The second chart is also a pie chart, but this chart visualizes the distribution of time spent on physical activities in a day. The majority spends less than 1 hour on physical activities in a day.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df5</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;fakenews.csv&#39;</span><span class="p">)</span>
+<span class="n">df5</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+
+<span class="n">df5</span> <span class="o">=</span> <span class="n">df5</span><span class="p">[</span><span class="n">df5</span><span class="p">[</span><span class="s1">&#39;language&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">notna</span><span class="p">()]</span>
+<span class="n">df5</span><span class="p">[</span><span class="s1">&#39;hasImage&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df5</span><span class="p">[</span><span class="s1">&#39;hasImage&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s1">&#39;Yes&#39;</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">1</span> <span class="k">else</span> <span class="s1">&#39;No&#39;</span><span class="p">)</span>
+
+<span class="n">language</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;english&#39;</span><span class="p">,</span> <span class="s1">&#39;german&#39;</span><span class="p">,</span> <span class="s1">&#39;french&#39;</span><span class="p">,</span> <span class="s1">&#39;spanish&#39;</span><span class="p">,</span> <span class="s1">&#39;ignore&#39;</span><span class="p">]</span>
+<span class="nb">type</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;bs&#39;</span><span class="p">,</span> <span class="s1">&#39;bias&#39;</span><span class="p">,</span> <span class="s1">&#39;conspiracy&#39;</span><span class="p">,</span> <span class="s1">&#39;hate&#39;</span><span class="p">,</span> <span class="s1">&#39;satire&#39;</span><span class="p">,</span> <span class="s1">&#39;state&#39;</span><span class="p">,</span> <span class="s1">&#39;junksci&#39;</span><span class="p">,</span> <span class="s1">&#39;fake&#39;</span><span class="p">]</span>
+
+<span class="n">fig_parallel2</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Figure</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">go</span><span class="o">.</span><span class="n">Parcats</span><span class="p">(</span>
+    <span class="n">dimensions</span><span class="o">=</span><span class="p">[</span>
+        <span class="p">{</span><span class="s1">&#39;label&#39;</span><span class="p">:</span> <span class="s1">&#39;Language&#39;</span><span class="p">,</span> <span class="s1">&#39;values&#39;</span><span class="p">:</span> <span class="n">df5</span><span class="p">[</span><span class="s1">&#39;language&#39;</span><span class="p">],</span> <span class="s1">&#39;categoryarray&#39;</span><span class="p">:</span> <span class="n">language</span><span class="p">},</span>
+        <span class="p">{</span><span class="s1">&#39;label&#39;</span><span class="p">:</span> <span class="s1">&#39;Type&#39;</span><span class="p">,</span> <span class="s1">&#39;values&#39;</span><span class="p">:</span> <span class="n">df5</span><span class="p">[</span><span class="s1">&#39;type&#39;</span><span class="p">],</span> <span class="s1">&#39;categoryarray&#39;</span><span class="p">:</span> <span class="nb">type</span><span class="p">},</span>
+        <span class="p">{</span><span class="s1">&#39;label&#39;</span><span class="p">:</span> <span class="s1">&#39;Has Image&#39;</span><span class="p">,</span> <span class="s1">&#39;values&#39;</span><span class="p">:</span> <span class="n">df5</span><span class="p">[</span><span class="s1">&#39;hasImage&#39;</span><span class="p">]},</span>
+        <span class="p">{</span><span class="s1">&#39;label&#39;</span><span class="p">:</span> <span class="s1">&#39;Real or Fake&#39;</span><span class="p">,</span> <span class="s1">&#39;values&#39;</span><span class="p">:</span> <span class="n">df5</span><span class="p">[</span><span class="s1">&#39;label&#39;</span><span class="p">]}</span>
+    <span class="p">],</span>
+    <span class="n">line</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;color&#39;</span><span class="p">:</span> <span class="n">df5</span><span class="p">[</span><span class="s1">&#39;label&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s1">&#39;mediumseagreen&#39;</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="s1">&#39;Real&#39;</span> <span class="k">else</span> <span class="s1">&#39;#E74739&#39;</span><span class="p">)}</span>
+<span class="p">))</span>
+
+<span class="n">fig_parallel2</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Analysis of Fake News Classification&#39;</span><span class="p">)</span>
+<span class="n">fig_parallel2</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df3</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s1">&#39;awareness.xlsx&#39;</span><span class="p">)</span>
+
+<span class="c1"># Translate questions</span>
+<span class="n">df3</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;Umur&#39;</span><span class="p">:</span> <span class="s1">&#39;Age&#39;</span><span class="p">,</span> <span class="s1">&#39;Jenis Kelamin&#39;</span><span class="p">:</span> <span class="s1">&#39;Sex&#39;</span><span class="p">,</span> 
+                   <span class="s1">&#39;Seberapa sering menggunakan media sosial? (jam/hari)&#39;</span><span class="p">:</span> <span class="s1">&#39;How often do you use social media? (hours/day)&#39;</span><span class="p">,</span> 
+                   <span class="s1">&#39;Berapa tahun telah menggunakan media sosial?&#39;</span><span class="p">:</span> <span class="s1">&#39;How many years have you used social media?&#39;</span><span class="p">,</span> 
+                   <span class="s1">&#39;Apakah informasi pribadi yang ada di media sosial Anda adalah informasi yang sebenarnya? &#39;</span><span class="p">:</span> <span class="s1">&#39;Is personal information on your social media real information?&#39;</span><span class="p">,</span>  
+                   <span class="s1">&#39;Apakah informasi data diri dan kegiatan Anda yang ada di media sosial Anda terbuka untuk umum? &#39;</span><span class="p">:</span> <span class="s1">&#39;Is the information about yourself and your activities on your social media open to the public?&#39;</span><span class="p">,</span> 
+                   <span class="s1">&#39;Apakah Anda memanfaatkan pengaturan (setting) privasi di media sosial? &#39;</span><span class="p">:</span> <span class="s1">&#39;Do you use privacy settings on social media?&#39;</span><span class="p">,</span>   
+                   <span class="s1">&#39;Apakah Anda hanya menambahkan orang lain sebagai teman di media sosial, hanya jika Anda mengenal mereka? &#39;</span><span class="p">:</span> <span class="s1">&#39;Do you only add other people as friends on social media, only if you know them?&#39;</span><span class="p">,</span>  
+                   <span class="s1">&#39;Apakah Anda membaca prosedur privacy and policy sebelum sign up ke media sosial? &#39;</span><span class="p">:</span> <span class="s1">&#39;Did you read the privacy and policy procedures before signing up for social media?&#39;</span><span class="p">,</span>   
+                   <span class="s1">&#39;Apakah Anda merasa khawatir (concern) terhadap privacy and policy media sosial? &#39;</span><span class="p">:</span> <span class="s1">&#39;Do you feel worried (concern) about the privacy and policy of social media?&#39;</span><span class="p">,</span> 
+                   <span class="s1">&#39;Apakah Anda mengetahui izin akses (permission access) media sosial terhadap perangkat (smartphone, tablet, dll.) Anda?&#39;</span><span class="p">:</span> <span class="s1">&#39;Do you know the social media access permissions for your device (smartphone, tablet, etc.)?&#39;</span><span class="p">,</span>
+                   <span class="s1">&#39;Apakah Anda merasa khawatir (concern) terhadap izin akses media sosial terhadap perangkat Anda? &#39;</span><span class="p">:</span> <span class="s1">&#39;Are you concerned about social media access permissions on your device?&#39;</span><span class="p">,</span> 
+                   <span class="s1">&#39;Apakah Anda selalu mengizinkan akses media sosial terhadap perangkat Anda? &#39;</span><span class="p">:</span> <span class="s1">&#39;Do you always allow social media access on your device?&#39;</span><span class="p">,</span> 
+                   <span class="s1">&#39;Apakah Anda merasa khawatir (concern) terhadap akses pihak ketiga (third-party access) di media sosial? &#39;</span><span class="p">:</span> <span class="s1">&#39;Are you concerned about third-party access on social media?&#39;</span><span class="p">,</span> 
+                   <span class="s1">&#39;Apakah Anda selalu mengizinkan akses pihak ketiga di media sosial? &#39;</span><span class="p">:</span> <span class="s1">&#39;Do you always allow third party access on social media?&#39;</span><span class="p">,</span> 
+                   <span class="s1">&#39;Manakah hal di bawah ini yang pernah Anda bagikan di media sosial? &#39;</span><span class="p">:</span> <span class="s1">&#39;Which of the following have you shared on social media?&#39;</span><span class="p">,</span> 
+                   <span class="s1">&#39;Apakah Anda khawatir (concern) terhadap privasi di media sosial? &#39;</span><span class="p">:</span> <span class="s1">&#39;Are you concerned about privacy on social media?&#39;</span><span class="p">,</span>
+                   <span class="s1">&#39;Apa yang Anda pahami tentang “privasi” dalam media sosial? &#39;</span><span class="p">:</span> <span class="s1">&#39;What do you understand about “privacy” in social media?&#39;</span><span class="p">},</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Translate Sex, Yes and No</span>
+<span class="n">df3</span><span class="p">[</span><span class="s1">&#39;Sex&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df3</span><span class="p">[</span><span class="s1">&#39;Sex&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s1">&#39;Male&#39;</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="s1">&#39;Laki-laki&#39;</span> <span class="k">else</span> <span class="s1">&#39;Female&#39;</span><span class="p">)</span>
+<span class="n">df3</span><span class="p">[</span><span class="s1">&#39;Is personal information on your social media real information?&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df3</span><span class="p">[</span><span class="s1">&#39;Is personal information on your social media real information?&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s1">&#39;Yes&#39;</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="s1">&#39;Ya&#39;</span> <span class="k">else</span> <span class="s1">&#39;No&#39;</span><span class="p">)</span> 
+<span class="n">df3</span><span class="p">[</span><span class="s1">&#39;Is the information about yourself and your activities on your social media open to the public?&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df3</span><span class="p">[</span><span class="s1">&#39;Is the information about yourself and your activities on your social media open to the public?&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s1">&#39;Yes&#39;</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="s1">&#39;Ya&#39;</span> <span class="k">else</span> <span class="s1">&#39;No&#39;</span><span class="p">)</span> 
+<span class="n">df3</span><span class="p">[</span><span class="s1">&#39;Do you use privacy settings on social media?&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df3</span><span class="p">[</span><span class="s1">&#39;Do you use privacy settings on social media?&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s1">&#39;Yes&#39;</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="s1">&#39;Ya&#39;</span> <span class="k">else</span> <span class="s1">&#39;No&#39;</span><span class="p">)</span>
+<span class="n">df3</span><span class="p">[</span><span class="s1">&#39;Do you only add other people as friends on social media, only if you know them?&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df3</span><span class="p">[</span><span class="s1">&#39;Do you only add other people as friends on social media, only if you know them?&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s1">&#39;Yes&#39;</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="s1">&#39;Ya&#39;</span> <span class="k">else</span> <span class="s1">&#39;No&#39;</span><span class="p">)</span> 
+<span class="n">df3</span><span class="p">[</span><span class="s1">&#39;Did you read the privacy and policy procedures before signing up for social media?&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df3</span><span class="p">[</span><span class="s1">&#39;Did you read the privacy and policy procedures before signing up for social media?&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s1">&#39;Yes&#39;</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="s1">&#39;Ya&#39;</span> <span class="k">else</span> <span class="s1">&#39;No&#39;</span><span class="p">)</span> 
+<span class="n">df3</span><span class="p">[</span><span class="s1">&#39;Do you know the social media access permissions for your device (smartphone, tablet, etc.)?&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df3</span><span class="p">[</span><span class="s1">&#39;Do you know the social media access permissions for your device (smartphone, tablet, etc.)?&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s1">&#39;Yes&#39;</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="s1">&#39;Ya&#39;</span> <span class="k">else</span> <span class="s1">&#39;No&#39;</span><span class="p">)</span> 
+
+<span class="c1"># Translate how worried people are</span>
+<span class="n">value_mapping</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Sangat khawatir&#39;</span><span class="p">:</span> <span class="s1">&#39;Very worried&#39;</span><span class="p">,</span> <span class="s1">&#39;Cukup khawatir&#39;</span><span class="p">:</span> <span class="s1">&#39;Moderately worried&#39;</span><span class="p">,</span> <span class="s1">&#39;Tidak terlalu khawatir&#39;</span><span class="p">:</span> <span class="s1">&#39;Slightly worried&#39;</span><span class="p">,</span> <span class="s1">&#39;Tidak khawatir sama sekali&#39;</span><span class="p">:</span> <span class="s1">&#39;Not worried&#39;</span><span class="p">}</span>
+<span class="n">df3</span><span class="p">[</span><span class="s1">&#39;Do you feel worried (concern) about the privacy and policy of social media?&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df3</span><span class="p">[</span><span class="s1">&#39;Do you feel worried (concern) about the privacy and policy of social media?&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">value_mapping</span><span class="p">)</span>
+<span class="n">df3</span><span class="p">[</span><span class="s1">&#39;Are you concerned about social media access permissions on your device?&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df3</span><span class="p">[</span><span class="s1">&#39;Are you concerned about social media access permissions on your device?&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">value_mapping</span><span class="p">)</span>
+<span class="n">df3</span><span class="p">[</span><span class="s1">&#39;Are you concerned about third-party access on social media?&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df3</span><span class="p">[</span><span class="s1">&#39;Are you concerned about third-party access on social media?&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">value_mapping</span><span class="p">)</span>
+<span class="n">df3</span><span class="p">[</span><span class="s1">&#39;Are you concerned about privacy on social media?&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df3</span><span class="p">[</span><span class="s1">&#39;Are you concerned about privacy on social media?&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">value_mapping</span><span class="p">)</span>
+
+<span class="c1"># Translate Always and not always to Yes and No</span>
+<span class="n">value_mapping2</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Tidak Selalu&#39;</span><span class="p">:</span> <span class="s1">&#39;No&#39;</span><span class="p">,</span> <span class="s1">&#39;Selalu&#39;</span><span class="p">:</span> <span class="s1">&#39;Yes&#39;</span><span class="p">}</span>
+<span class="n">df3</span><span class="p">[</span><span class="s1">&#39;Do you always allow social media access on your device?&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df3</span><span class="p">[</span><span class="s1">&#39;Do you always allow social media access on your device?&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">value_mapping2</span><span class="p">)</span>
+<span class="n">df3</span><span class="p">[</span><span class="s1">&#39;Do you always allow third party access on social media?&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df3</span><span class="p">[</span><span class="s1">&#39;Do you always allow third party access on social media?&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">value_mapping2</span><span class="p">)</span>
+
+<span class="c1"># Make plots</span>
+<span class="n">df4</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">df3</span><span class="p">,</span> <span class="n">value_vars</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Is personal information on your social media real information?&#39;</span><span class="p">,</span> <span class="s1">&#39;Is the information about yourself and your activities on your social media open to the public?&#39;</span><span class="p">,</span>
+                               <span class="s1">&#39;Do you know the social media access permissions for your device (smartphone, tablet, etc.)?&#39;</span><span class="p">,</span> <span class="s1">&#39;Do you always allow social media access on your device?&#39;</span><span class="p">,</span> 
+                               <span class="s1">&#39;Do you always allow third party access on social media?&#39;</span><span class="p">,</span> <span class="s1">&#39;Did you read the privacy and policy procedures before signing up for social media?&#39;</span><span class="p">,</span>
+                               <span class="s1">&#39;Do you use privacy settings on social media?&#39;</span><span class="p">,</span> <span class="s1">&#39;Do you only add other people as friends on social media, only if you know them?&#39;</span><span class="p">],</span>
+                                <span class="n">var_name</span><span class="o">=</span><span class="s1">&#39;Survey questions&#39;</span><span class="p">,</span> <span class="n">value_name</span><span class="o">=</span><span class="s1">&#39;Answer&#39;</span><span class="p">)</span>
+<span class="n">wrapped_labels</span> <span class="o">=</span> <span class="p">[</span><span class="n">textwrap</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="n">label</span><span class="p">,</span> <span class="mi">24</span><span class="p">)</span> <span class="k">for</span> <span class="n">label</span> <span class="ow">in</span> <span class="n">df4</span><span class="p">[</span><span class="s1">&#39;Survey questions&#39;</span><span class="p">]]</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">countplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">wrapped_labels</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s1">&#39;Answer&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">df4</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span> <span class="n">palette</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;#1565C0&#39;</span><span class="p">,</span> <span class="s1">&#39;#D32F3F&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;Social media survey results&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="n">df5</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">df3</span><span class="p">,</span> <span class="n">value_vars</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Do you feel worried (concern) about the privacy and policy of social media?&#39;</span><span class="p">,</span> <span class="s1">&#39;Are you concerned about social media access permissions on your device?&#39;</span><span class="p">,</span>
+                               <span class="s1">&#39;Are you concerned about third-party access on social media?&#39;</span><span class="p">,</span> <span class="s1">&#39;Are you concerned about privacy on social media?&#39;</span><span class="p">],</span>
+                                <span class="n">var_name</span><span class="o">=</span><span class="s1">&#39;Survey questions&#39;</span><span class="p">,</span> <span class="n">value_name</span><span class="o">=</span><span class="s1">&#39;Degree&#39;</span><span class="p">)</span>
+<span class="n">wrapped_labels</span> <span class="o">=</span> <span class="p">[</span><span class="n">textwrap</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="n">label</span><span class="p">,</span> <span class="mi">24</span><span class="p">)</span> <span class="k">for</span> <span class="n">label</span> <span class="ow">in</span> <span class="n">df5</span><span class="p">[</span><span class="s1">&#39;Survey questions&#39;</span><span class="p">]]</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">countplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">wrapped_labels</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s1">&#39;Degree&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">df5</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span> <span class="n">palette</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;#FF5C5C&quot;</span><span class="p">,</span> <span class="s2">&quot;#FF8A42&quot;</span><span class="p">,</span> <span class="s2">&quot;#FFC26B&quot;</span><span class="p">,</span> <span class="s2">&quot;#83FF73&quot;</span><span class="p">])</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;Degree of concern regarding social media&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/abb808af3bbc497b29897762f29320df7429c2c8c7ceeebc8ade68552cc244b1.png" src="../_images/abb808af3bbc497b29897762f29320df7429c2c8c7ceeebc8ade68552cc244b1.png" />
+<img alt="../_images/d12e9a4a3d733474cf43a0ca57c0e5ebc0a8d89eb0251a55a986825a6405bacc.png" src="../_images/d12e9a4a3d733474cf43a0ca57c0e5ebc0a8d89eb0251a55a986825a6405bacc.png" />
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="arguments-per-perspective">
+<h2>Arguments per perspective<a class="headerlink" href="#arguments-per-perspective" title="Permalink to this headline">#</a></h2>
+<p>Social media increases the awareness of students. First of all, social media is accessible for plenty of students. Social media applications are easily accessible through various devices. This accessibility ensures that students can stay connected and informed regardless of their location or time zone. This accessibility is also proven by our first chart. The chart shows that the time students spend using social media is a significant part of the total time spent on devices.</p>
+<p>Social media has revolutionized communication. Social media has broken down geographical barriers, allowing people from around the world to connect and communicate with each other easily. Moreover, the communication through social media is real-time. For example, people can exchange information directly through video calls or instant messaging. This immediacy improves decision-making and enhances interpersonal relationships. Furthermore, social media is one of the most preferred forms of online communication. As seen in the second chart of the second visualization, social media is a significant part of online communication.</p>
+<p>Social media is a place where a lot of information can spread quickly. This can be seen as a good thing, because it stimulates global communication. On the other hand, it can also be used in a bad way. Because information can be spread so fast, it creates the possibility to spread misinformation on the internet. Spreading fake news can have a big impact on individuals and our society, because many people base their views and beliefs on information they see on the internet and social media. In the pie charts about cyber crimes the majority of the people who fell victim to cybercrimes came across fake profiles. Spreading fake news via fake profiles occurs often, because these accounts may appear to be real and belong to family or people they trust.</p>
+<p>A big problem with social media is that on the platforms the users will compare their lives to others, which can lead to low self-esteem, depression and anxiety. By creating such an environment, where individuals are constantly exposed to other people’s lives, the social media users can develop feelings of dissatisfaction with their own lives. As seen in the ‘Very often’ boxplot, all mental health conditions have a relatively max score. So the people who spend a lot of time using social media experience more mental health problems.</p>
 </div>
 </div>
 
@@ -693,8 +901,14 @@ if (outputEl) {{
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#load-data">Load data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#plot-data">Plot data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset-and-preprocessing">Dataset and preprocessing</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#average-screentime">1 Average screentime</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#effects-of-social-media">2 Effects of social media</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#factors-contributing-to-internet-addiction">3 Factors contributing to internet addiction.</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#arguments-per-perspective">Arguments per perspective</a></li>
 </ul>
   </nav></div>
 
