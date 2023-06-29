@@ -15,71 +15,23 @@ Traceback (most recent call last):
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
-df = pd.read_spss('addiction.sav')
-
-df.rename(columns={'DASS21_depression': 'Depression', 'DASS21_anxiety': 'Anxiety', 'DASS21_stress': 'Stress'}, inplace=True)
-
-order = ['Never', 'Seldom', 'Sometimes', 'Often', 'Very Often']
-
-fig3 = px.box(df, y=['Anxiety', 'Depression', 'Stress'],
-             labels={'variable': '', 'value': 'Scale'}, 
-             title='Relation between DASS Scale and Social Network Usage', facet_col=df['Social_Network'], 
-             color=df['Social_Network'], category_orders={'Social_Network': order})
-
-fig3.show()
+import pandas as pd
+import plotly.graph_objs as go
+import plotly.express as px
+import seaborn as sns
+import matplotlib.pyplot as plt
+import textwrap
+import openpyxl
+import pyreadstat
 ------------------
 
 
 [1;31m---------------------------------------------------------------------------[0m
 [1;31mModuleNotFoundError[0m                       Traceback (most recent call last)
-File [1;32m~\miniconda3\envs\jupyterbook\lib\site-packages\pandas\compat\_optional.py:142[0m, in [0;36mimport_optional_dependency[1;34m(name, extra, errors, min_version)[0m
-[0;32m    141[0m [38;5;28;01mtry[39;00m:
-[1;32m--> 142[0m     module [38;5;241m=[39m [43mimportlib[49m[38;5;241;43m.[39;49m[43mimport_module[49m[43m([49m[43mname[49m[43m)[49m
-[0;32m    143[0m [38;5;28;01mexcept[39;00m [38;5;167;01mImportError[39;00m:
-
-File [1;32m~\miniconda3\envs\jupyterbook\lib\importlib\__init__.py:127[0m, in [0;36mimport_module[1;34m(name, package)[0m
-[0;32m    126[0m         level [38;5;241m+[39m[38;5;241m=[39m [38;5;241m1[39m
-[1;32m--> 127[0m [38;5;28;01mreturn[39;00m [43m_bootstrap[49m[38;5;241;43m.[39;49m[43m_gcd_import[49m[43m([49m[43mname[49m[43m[[49m[43mlevel[49m[43m:[49m[43m][49m[43m,[49m[43m [49m[43mpackage[49m[43m,[49m[43m [49m[43mlevel[49m[43m)[49m
-
-File [1;32m<frozen importlib._bootstrap>:1030[0m, in [0;36m_gcd_import[1;34m(name, package, level)[0m
-
-File [1;32m<frozen importlib._bootstrap>:1007[0m, in [0;36m_find_and_load[1;34m(name, import_)[0m
-
-File [1;32m<frozen importlib._bootstrap>:984[0m, in [0;36m_find_and_load_unlocked[1;34m(name, import_)[0m
+Cell [1;32mIn[1], line 8[0m
+[0;32m      6[0m [38;5;28;01mimport[39;00m [38;5;21;01mtextwrap[39;00m
+[0;32m      7[0m [38;5;28;01mimport[39;00m [38;5;21;01mopenpyxl[39;00m
+[1;32m----> 8[0m [38;5;28;01mimport[39;00m [38;5;21;01mpyreadstat[39;00m
 
 [1;31mModuleNotFoundError[0m: No module named 'pyreadstat'
-
-During handling of the above exception, another exception occurred:
-
-[1;31mImportError[0m                               Traceback (most recent call last)
-Cell [1;32mIn[4], line 1[0m
-[1;32m----> 1[0m df [38;5;241m=[39m [43mpd[49m[38;5;241;43m.[39;49m[43mread_spss[49m[43m([49m[38;5;124;43m'[39;49m[38;5;124;43maddiction.sav[39;49m[38;5;124;43m'[39;49m[43m)[49m
-[0;32m      3[0m df[38;5;241m.[39mrename(columns[38;5;241m=[39m{[38;5;124m'[39m[38;5;124mDASS21_depression[39m[38;5;124m'[39m: [38;5;124m'[39m[38;5;124mDepression[39m[38;5;124m'[39m, [38;5;124m'[39m[38;5;124mDASS21_anxiety[39m[38;5;124m'[39m: [38;5;124m'[39m[38;5;124mAnxiety[39m[38;5;124m'[39m, [38;5;124m'[39m[38;5;124mDASS21_stress[39m[38;5;124m'[39m: [38;5;124m'[39m[38;5;124mStress[39m[38;5;124m'[39m}, inplace[38;5;241m=[39m[38;5;28;01mTrue[39;00m)
-[0;32m      5[0m order [38;5;241m=[39m [[38;5;124m'[39m[38;5;124mNever[39m[38;5;124m'[39m, [38;5;124m'[39m[38;5;124mSeldom[39m[38;5;124m'[39m, [38;5;124m'[39m[38;5;124mSometimes[39m[38;5;124m'[39m, [38;5;124m'[39m[38;5;124mOften[39m[38;5;124m'[39m, [38;5;124m'[39m[38;5;124mVery Often[39m[38;5;124m'[39m]
-
-File [1;32m~\miniconda3\envs\jupyterbook\lib\site-packages\pandas\io\spss.py:54[0m, in [0;36mread_spss[1;34m(path, usecols, convert_categoricals, dtype_backend)[0m
-[0;32m     23[0m [38;5;28;01mdef[39;00m [38;5;21mread_spss[39m(
-[0;32m     24[0m     path: [38;5;28mstr[39m [38;5;241m|[39m Path,
-[0;32m     25[0m     usecols: Sequence[[38;5;28mstr[39m] [38;5;241m|[39m [38;5;28;01mNone[39;00m [38;5;241m=[39m [38;5;28;01mNone[39;00m,
-[0;32m     26[0m     convert_categoricals: [38;5;28mbool[39m [38;5;241m=[39m [38;5;28;01mTrue[39;00m,
-[0;32m     27[0m     dtype_backend: DtypeBackend [38;5;241m|[39m lib[38;5;241m.[39mNoDefault [38;5;241m=[39m lib[38;5;241m.[39mno_default,
-[0;32m     28[0m ) [38;5;241m-[39m[38;5;241m>[39m DataFrame:
-[0;32m     29[0m [38;5;250m    [39m[38;5;124;03m"""[39;00m
-[0;32m     30[0m [38;5;124;03m    Load an SPSS file from the file path, returning a DataFrame.[39;00m
-[0;32m     31[0m 
-[1;32m   (...)[0m
-[0;32m     52[0m [38;5;124;03m    DataFrame[39;00m
-[0;32m     53[0m [38;5;124;03m    """[39;00m
-[1;32m---> 54[0m     pyreadstat [38;5;241m=[39m [43mimport_optional_dependency[49m[43m([49m[38;5;124;43m"[39;49m[38;5;124;43mpyreadstat[39;49m[38;5;124;43m"[39;49m[43m)[49m
-[0;32m     55[0m     check_dtype_backend(dtype_backend)
-[0;32m     57[0m     [38;5;28;01mif[39;00m usecols [38;5;129;01mis[39;00m [38;5;129;01mnot[39;00m [38;5;28;01mNone[39;00m:
-
-File [1;32m~\miniconda3\envs\jupyterbook\lib\site-packages\pandas\compat\_optional.py:145[0m, in [0;36mimport_optional_dependency[1;34m(name, extra, errors, min_version)[0m
-[0;32m    143[0m [38;5;28;01mexcept[39;00m [38;5;167;01mImportError[39;00m:
-[0;32m    144[0m     [38;5;28;01mif[39;00m errors [38;5;241m==[39m [38;5;124m"[39m[38;5;124mraise[39m[38;5;124m"[39m:
-[1;32m--> 145[0m         [38;5;28;01mraise[39;00m [38;5;167;01mImportError[39;00m(msg)
-[0;32m    146[0m     [38;5;28;01mreturn[39;00m [38;5;28;01mNone[39;00m
-[0;32m    148[0m [38;5;66;03m# Handle submodules: if we have submodule, grab parent module from sys.modules[39;00m
-
-[1;31mImportError[0m: Missing optional dependency 'pyreadstat'.  Use pip or conda to install pyreadstat.
 
